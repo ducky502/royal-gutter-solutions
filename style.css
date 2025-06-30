@@ -1,0 +1,16 @@
+.btn{
+    color: aqua;
+    border-radius: 10px;
+    border-color: black;
+    border: 10px solid;
+
+
+    transition-property:transform;
+    transition-duration: 0.5;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.btn:hover {
+    transform: translateY(-10px);
+}

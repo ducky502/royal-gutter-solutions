@@ -2,7 +2,7 @@
     color: rgb(0, 0, 0);
     border-radius: 10px;
     background-color: rgb(0, 255, 221);
-    border-color: rgb(0, 0, 0);
+    border-color: #000000;
     border: 5px solid;
 
 
@@ -23,4 +23,8 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.btn{
+    size: 200px;
 }

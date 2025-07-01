@@ -16,8 +16,8 @@
 
 .btn:hover {
     transform: translateY(-10px);
-    background-color: var(--clr-accent);
-    color: var(--clr-light);
+    background-color: var(black);
+    color: var(white);
 }
 
 .hello{

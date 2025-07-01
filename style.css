@@ -24,8 +24,3 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
-.btn{
-        padding: 20px 40px;     /* top-bottom | left-right */
-    font-size: 20px;         /* increases text size */
-}

@@ -7,9 +7,11 @@
 
 
     transition-property:transform;
-    transition-duration: 1s;
+    transition-duration: 0.5;
     transition-timing-function: ease;
     transition-delay: 0s;
+
+    transition:transform 0.5s ease;
 }
 
 .btn:hover {

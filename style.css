@@ -1,48 +1,35 @@
-.btn{
-    color: rgb(0, 0, 0);
-    border-radius: 10px;
-    background-color: rgb(0, 255, 221);
-    border-color: #000000;
-    border: 5px solid;
-
-
-    transition-property:transform;
-    transition-duration: 0.5;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-
-    transition:all 0.5s;
+.btn-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  animation: yahoo 2s ease forwards;
+  transform: translate(-200px, -50%);
 }
 
-.btn:hover {
-    transform: translateY(-10px);
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    border-color: rgb(0, 0, 0);
-}
-.hello{
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(0, 255, 221);
+  border: 5px solid #000000;
+  border-radius: 30px;
+  cursor: pointer;
+
+  transition: transform 0.5s, background-color 0.5s, color 0.5s, border-color 0.5s;
 }
 
+.btn-wrapper:hover .btn {
+  transform: translateY(-10px);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-color: rgb(0, 0, 0);
+}
 
 @keyframes yahoo {
-    from{
-        transform: translateX(-300px);
-    }
-    to{
-        transform: translateY(300px);
-    }
-}
-
-.btn{
-    animation-name: yahoo;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: none;
+  0% {
+    transform: translate(-400px, -50%);
+  }
+  100% {
+    transform: translate(-200px, -50%);
+  }
 }

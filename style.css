@@ -26,3 +26,23 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+@keyframes yahoo {
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateY(300px);
+    }
+}
+
+.btn{
+    animation-name: yahoo;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
